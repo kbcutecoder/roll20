@@ -5,7 +5,26 @@
   box-sizing: border-box;
 }
 
-.header{
-  background-image: url('image/Screenshot_2023-12-14_200200-removebg-preview.png');
-  background-repeat: no-repeat;
-}
+.sheet-flex-container {
+  background: url("image/Screenshot_2023-12-14_200200-removebg-preview.png");
+  background-size: 100% 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  padding-left: 120px;
+  padding-top: 40px;
+ }
+    .sheet-section-pc-header-details-panel {
+      display: grid;
+     grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 5px;
+     }
+        .sheet-section-pc-header-details-panel div {
+        display: flex;
+        flex-direction: column-reverse; 
+      }
+         .sheet-img{
+          display: grid;
+
+        }
