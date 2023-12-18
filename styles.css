@@ -18,6 +18,55 @@
   font-size: 16px;
 }
 
+.sheet-saves-stats div div :first-child{
+  background: url("image/stas.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 95%;
+  width: inherit;
+  column-gap: 50px;
+  margin: 0px;
+  padding: 0px;
+}
+
+  .sheet-saves-stats {
+padding: 10px;
+padding-top: 20px;
+min-height: 130px;
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+justify-content: space-evenly;
+overflow: auto;
+column-gap: 5px;
+}
+
+.sheet-saves-stats div div input
+{
+  font-size: 22px;
+  border: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  height: 100%;
+}
+
+
+.sheet-saves-stats div{
+  height: 100%;
+  width: 80px;
+  text-align: center;
+}
+
+.sheet-saves-stats div div:last-child
+{
+  background-size: 100% 70%;
+  height: 30%;
+  width: inherit;
+  padding-top: 7px;
+}
+
 .sheet-skills
 {
 border-left: 5px double black;
