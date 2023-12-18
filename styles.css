@@ -5,75 +5,90 @@
   box-sizing: border-box;
 }
 
-.charsheet .sheet-grid-container {
-  background: url('image/Screenshot_2023-12-14_200200-removebg-preview.png');
-  background-size: 100% 100%;
-  max-width: 1000px;
-  display: grid;
-  
-  padding: 30px;
-  background-repeat: no-repeat;
-  grid-template-columns: 50% 50%;
-  margin: auto;
+.charsheet
+{
+  max-width: 950px;
 }
 
-.sheet-grid-container > div {
-  padding: 20px 0;
+ p
+{
   font-size: 10px;
-  padding-left:5px;
-  padding-top: 10px;
-  margin: auto;
-  
 }
 
+.sheet-skills
+{
+border-left: 5px double black;
+border-right: 5px double black;
+border-bottom: 2px solid black;
+border-top: 2px solid black;
+padding: 10px;
+padding-top: 20px;
+min-height: 130px;
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+justify-content: space-evenly;
+overflow: auto;
+column-gap: 5px;
 
-.charsheet    .sheet-section-pc-header-name input {
-  flex-grow: 1;
-  font-size: 10px;
-  padding-top: 10px;
-  padding-left: 5px;
+
+}
+
+.sheet-skills-title
+{
+  transform: translateY(15px);
   margin: auto;
-  
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
   text-align: center;
-}
-  .input{
-    border-left: 0;
-    border-right: 0;
-    border-top: 0;
-    border-bottom: 1px solid black;
-    border-radius: 0;
-    height: 19px;
-    padding: 0;
-    width: 100%;
-   
-    
+  width: 150px;
+  background-color: white;
+  font-size: 20px !important;
 }
 
-.charsheet   {
-  grid-area: details;
-  overflow: hidden;
-  padding: 5px 35px;
-  position: relative;
-  background: white;
-}
-
-.charsheet  .sheet-section-pc-header-details-panel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 15px;
+.sheet-skills div
+{
   height: 100%;
+  width: 80px;
+  text-align: center;
+
+}
+
+.sheet-skills div div:first-child
+{
+  background: url("image/skills.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 70%;
+  width: inherit;
+  column-gap: 50px;
+}
+.sheet-skills div div input
+{
+  font-size: 22px;
+  border: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  height: 100%;
+}
+.sheet-skills div div:last-child
+{
+  background-size: 100% 70%;
+  height: 30%;
+  width: inherit;
+  padding-top: 7px;
+}
+.sheet-skills div div *
+{
+  margin: 0px;
+  padding: 0px;
 }
 
 
 .charsheet .sheet-text-container{
-  max-width: 1000px;
+  max-width: inherit;
   display: grid;
   grid-template-columns: 23% 77%;
-  margin: auto;
   margin-top: 30px;
 }
 .sheet-pc-text{

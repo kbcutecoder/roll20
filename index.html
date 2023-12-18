@@ -1,80 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
-  <title>roll20</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+
+    <title>roll20</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body class="charsheet">
 
 
-<div class="sheet-grid-container">
-       
+    <div class="sheet-grid-container">
+     
         <div class="sheet-section-pc-header-name" style="border:2px solid black">
             <input type="text" name="attr_character_name" title="@{character_name}">
         </div>
-                <div class="sheet-section-pc-header-details-panel" style="border:2px solid black">
-                    <div>
-                        <label>Class &amp; Level</label>
-                        <input type="text" name="attr_class_display" title="@{class_display}">
-                    </div>
-                    <div>
-                        <label>Background</label>
-                        <input type="text" name="attr_background" title="@{background}">
-                    </div>
-                    <div>
-                        <label>Race</label>
-                        <input type="text" name="attr_race_display" title="@{race_display}">
-                    </div>
-                    <div>
-                        <label>Alignment</label>
-                        <input type="text" name="attr_alignment" title="@{alignment}">
-                    </div>
-                </div>
-             </div>
-
-
-             <div class="sheet-text-container">
-                <div class="sheet-text-pc">
-                    <p><b>Action Points (AP).</b> In combat,
-                        you get 3 Action Points that
-                        recharge at the end of each turn.</p>
-                        <p><b>1 AP</b> can be spent to: attack,
-                            move, use a bonus action or
-                            reaction, drink a potion, cast a
-                            cantrip/bonus action/reaction
-                            spell, or use any of the other
-                            more obscure actions (e.g., hide).</p>
-                            <p>Leveled spells with casting time of
-                                1 action are the only exception,
-                                they cost <b>2 AP</b> to cast.</p>
-                </div>
-
-                <div class="sheet-pc-text">
-                    <h4>HEROIC ACSIONR</h4>
-                    <ul>
-                        <li><b>Rushed Attack. </b>Making more than your normally allowed attacks each turn is allowed (provided
-                            you have enough AP to spend), but these attacks are rushed and trigger stacking disadvantage</li>
-                            <li><b>Assess.</b> Make a skill check to uncover information, spot a weakness, intuit enemy tactics or plans,
-                                etc.</li>
-                                        </ul>
-                                        <h4>HEROIC REACSIONR</h4>
-                                        <ul>
-                                            <li><b>Block/Dodge.</b> Reduce damage from a single attack by your AC modifier (AC–8).T</li>
-                                            <li><b>Help.</b> Grant an ally advantage on an attack, skill check, or saving throw if you can reasonably
-                                                explain to the DM how you could help in a given situation.</li>
-                                                <li> <b>Opportunity Attack.</b> A melee attack made at disadvantage when an adjacent enemy moves away</li>
-                                                <li> <b>Interpose.</b> If an ally within 10 ft. would be struck with an attack, you can push them out of the way
-                                                    and become the new target of the attack. Cou enter their square and move them to an adjacent
-                                                    square of your choice.</li>
-
-                                        </ul>
-
-                </div>
+        <div class="sheet-section-pc-header-details-panel" style="border:2px solid black">
+            <div>
+                <label>Class &amp; Level</label>
+                <input type="text" name="attr_class_display" title="@{class_display}">
             </div>
-   
+            <div>
+                <label>Background</label>
+                <input type="text" name="attr_background" title="@{background}">
+            </div>
+            <div>
+                <label>Race</label>
+                <input type="text" name="attr_race_display" title="@{race_display}">
+            </div>
+            <div>
+                <label>Alignment</label>
+                <input type="text" name="attr_alignment" title="@{alignment}">
+            </div>
+        </div>
+    </div>
+
+    <!-- SKILLS -->
+    <h5 class="sheet-skills-title"> SKILLS </h5>
+    <div class="sheet-skills">
+        <div>
+            <div>
+                <input type="number">
+            </div>
+            <div><h6>ARCANA</h6>
+                <p>INT</p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <input type="number">
+            </div>
+            <div><h6>EXAMINATION</h6>
+                <p>INT</p>
+            </div>
+         </div>
+         
+    </div>
+
+
+    <div class="sheet-text-container">
+        <div class="sheet-text-pc">
+            <p><b>Action Points (AP).</b> In combat,
+                you get 3 Action Points that
+                recharge at the end of each turn.</p>
+            <p><b>1 AP</b> can be spent to: attack,
+                move, use a bonus action or
+                reaction, drink a potion, cast a
+                cantrip/bonus action/reaction
+                spell, or use any of the other
+                more obscure actions (e.g., hide).</p>
+            <p>Leveled spells with casting time of
+                1 action are the only exception,
+                they cost <b>2 AP</b> to cast.</p>
+        </div>
+
+        <div class="sheet-pc-text">
+            <h4>HEROIC ACSIONR</h4>
+            <ul>
+                <li><b>Rushed Attack. </b>Making more than your normally allowed attacks each turn is allowed (provided
+                    you have enough AP to spend), but these attacks are rushed and trigger stacking disadvantage</li>
+                <li><b>Assess.</b> Make a skill check to uncover information, spot a weakness, intuit enemy tactics or
+                    plans,
+                    etc.</li>
+            </ul>
+            <h4>HEROIC REACSIONR</h4>
+            <ul>
+                <li><b>Block/Dodge.</b> Reduce damage from a single attack by your AC modifier (AC–8).T</li>
+                <li><b>Help.</b> Grant an ally advantage on an attack, skill check, or saving throw if you can
+                    reasonably
+                    explain to the DM how you could help in a given situation.</li>
+                <li> <b>Opportunity Attack.</b> A melee attack made at disadvantage when an adjacent enemy moves away
+                </li>
+                <li> <b>Interpose.</b> If an ally within 10 ft. would be struck with an attack, you can push them out of
+                    the way
+                    and become the new target of the attack. Cou enter their square and move them to an adjacent
+                    square of your choice.</li>
+
+            </ul>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
