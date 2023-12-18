@@ -29,8 +29,6 @@ grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
 justify-content: space-evenly;
 overflow: auto;
 column-gap: 5px;
-
-
 }
 
 .sheet-skills-title
