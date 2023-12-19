@@ -67,6 +67,52 @@ column-gap: 5px;
   padding-top: 7px;
 }
 
+.sheet-header2
+{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 48% 48%;
+  height: 230px;
+}
+
+.sheet-header2 div:first-child
+{
+  height: 100%;
+  text-align: center;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 15px;
+  min-width: 50px;
+}
+
+.sheet-header2 div:first-child div 
+{
+  background: url("image/stas.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100px;
+}
+
+.sheet-header2 div:last-child
+{
+  background: url("image/combat.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto, auto auto auto;
+
+}
+
+.sheet-header2 .left div
+{
+  height: 20px;
+  border: 1px solid green;
+}
+
+
 .sheet-skills
 {
 border-left: 5px double black;
