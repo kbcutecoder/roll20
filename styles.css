@@ -10,19 +10,20 @@
   max-width: 950px;
 }
 
- p
-{
+ p{
   font-size: 10px;
 }
+
 .text{
   font-size: 16px;
 }
+
 
 .sheet-saves-stats div div :first-child{
   background: url("image/stas.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 95%;
+  height: 100%;
   width: inherit;
   column-gap: 50px;
   margin: 0px;
@@ -40,8 +41,7 @@ overflow: auto;
 column-gap: 5px;
 }
 
-.sheet-saves-stats div div input
-{
+.sheet-saves-stats div div input{
   font-size: 22px;
   border: none;
   width: 100%;
@@ -59,16 +59,14 @@ column-gap: 5px;
   text-align: center;
 }
 
-.sheet-saves-stats div div:last-child
-{
+.sheet-saves-stats div div:last-child{
   background-size: 100% 70%;
   height: 30%;
   width: inherit;
   padding-top: 7px;
 }
 
-.sheet-skills
-{
+.sheet-skills{
 border-left: 5px double black;
 border-right: 5px double black;
 border-bottom: 2px solid black;
@@ -83,8 +81,7 @@ overflow: auto;
 column-gap: 5px;
 }
 
-.sheet-skills-title
-{
+.sheet-skills-title{
   transform: translateY(15px);
   margin: auto;
   text-align: center;
@@ -93,16 +90,14 @@ column-gap: 5px;
   font-size: 20px !important;
 }
 
-.sheet-skills div
-{
+.sheet-skills div{
   height: 100%;
   width: 80px;
   text-align: center;
 
 }
 
-.sheet-skills div div:first-child
-{
+.sheet-skills div div:first-child{
   background: url("image/skills.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -110,8 +105,8 @@ column-gap: 5px;
   width: inherit;
   column-gap: 50px;
 }
-.sheet-skills div div input
-{
+
+.sheet-skills div div input{
   font-size: 22px;
   border: none;
   width: 100%;
@@ -121,15 +116,15 @@ column-gap: 5px;
   outline: none;
   height: 100%;
 }
-.sheet-skills div div:last-child
-{
+
+.sheet-skills div div:last-child{
   background-size: 100% 70%;
   height: 30%;
   width: inherit;
   padding-top: 7px;
 }
-.sheet-skills div div *
-{
+
+.sheet-skills div div *{
   margin: 0px;
   padding: 0px;
 }
@@ -141,6 +136,7 @@ column-gap: 5px;
   grid-template-columns: 23% 77%;
   margin-top: 30px;
 }
+
 .sheet-pc-text{
   padding-left: 50px;
 }
