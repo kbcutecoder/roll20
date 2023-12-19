@@ -32,14 +32,15 @@
 
   .sheet-saves-stats {
 padding: 10px;
-padding-top: 20px;
-min-height: 130px;
+padding-top: 25px;
+min-height: 140px;
 display: grid;
 grid-template-columns: auto auto auto auto auto;
 justify-content: space-evenly;
 overflow: auto;
 column-gap: 5px;
 }
+
 
 .sheet-saves-stats div div input{
   font-size: 22px;
