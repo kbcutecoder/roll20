@@ -18,54 +18,76 @@
   font-size: 16px;
 }
 
+/*
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
-.sheet-saves-stats div div :first-child{
+HEADER 2ND SECTIONN STATS SAVES COMBAT 
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+*/
+
+.sheet-header2
+{
+  margin-top: 10px;
+  padding-left: 30px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 42% 55%;
+  height: 230px;
+  background: url('image/Screenshot_2023-12-19_132856-removebg-preview.png');
+  background-repeat: no-repeat;
+}
+
+.sheet-header2 div:first-child
+{
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 15px;
+  min-width: 50px;
+}
+
+.sheet-header2 div:first-child div div:first-child
+{
   background: url("image/stas.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100%;
-  width: inherit;
-  column-gap: 50px;
-  margin: 0px;
-  padding: 0px;
+  height: 100px;
+
 }
 
-  .sheet-saves-stats {
-padding: 10px;
-padding-top: 25px;
-min-height: 140px;
-display: grid;
-grid-template-columns: auto auto auto auto auto;
-justify-content: space-evenly;
-overflow: auto;
-column-gap: 5px;
-}
-
-
-.sheet-saves-stats div div input{
-  font-size: 22px;
+.sheet-header2 div:first-child div input 
+{
+  font-size: 12px;
   border: none;
-  width: 100%;
+  width: 50px;
   margin: auto;
+  background-color: rgba(100,100,100,0.2);
   text-align: center;
-  background-color: transparent;
   outline: none;
-  height: 100%;
+  height: 30px;
 }
 
-
-.sheet-saves-stats div{
+.sheet-header2 div:last-child
+{
+  background: url("image/combat.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   height: 100%;
-  width: 80px;
   text-align: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+
 }
 
-.sheet-saves-stats div div:last-child{
-  background-size: 100% 70%;
-  height: 30%;
-  width: inherit;
-  padding-top: 7px;
-}
+
+/*
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ S K I L L S  - S E C T I O N S 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+*/
 
 .sheet-skills{
 border-left: 5px double black;
@@ -107,7 +129,8 @@ column-gap: 5px;
   column-gap: 50px;
 }
 
-.sheet-skills div div input{
+.sheet-skills div div input
+{
   font-size: 22px;
   border: none;
   width: 100%;
