@@ -18,6 +18,79 @@
   font-size: 16px;
 }
 
+input:focus
+{
+  outline: none;
+  border: none;
+}
+
+input[type=number],input[type=text]
+{
+  background-color:  transparent;
+  border: none;
+  width: 98%;
+  font-size: 20px;
+  height: 50px;
+  text-align: left;
+}
+
+/*
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+
+HEADER 1st SECTIONN STATS SAVES COMBAT 
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+*/
+
+.sheet-grid-container
+{
+  padding: 20px 10px 29px 40px;
+  min-height: 172px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 38% 60%;
+  justify-content: start;
+  column-gap: 20px;
+  background: url("image/header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sheet-grid-container div:first-child
+{
+  display: flex;
+  align-items: center;
+}
+
+.sheet-grid-container div:last-child
+{
+  display: grid;
+  grid-template-columns: 41% 39% 14%;
+  justify-content: start;
+  column-gap: 10px;
+}
+.sheet-grid-container div:last-child div
+{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.sheet-grid-container div:last-child div:first-child
+{
+  display: grid;
+  gap: 0px;
+  grid-template-columns: 76% 24%;
+}
+
+.sheet-grid-container div:last-child div:last-child
+{
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /*
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
@@ -34,53 +107,106 @@ HEADER 2ND SECTIONN STATS SAVES COMBAT
   gap: 30px;
   grid-template-columns: 42% 55%;
   height: 230px;
-  background: url('image/Screenshot_2023-12-19_132856-removebg-preview.png');
-  background-repeat: no-repeat;
-}
-
-.sheet-header2 div:first-child
-{
-  height: 100%;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 15px;
-  min-width: 50px;
-}
-
-.sheet-header2 div:first-child div div:first-child
-{
-  background: url("image/stas.png");
+  background: url("image/header2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 100px;
-
 }
 
-.sheet-header2 div:first-child div input 
+.sheet-header2 div
 {
-  font-size: 12px;
-  border: none;
-  width: 50px;
-  margin: auto;
-  background-color: rgba(100,100,100,0.2);
-  text-align: center;
-  outline: none;
+  border: 1px solid transparent;
+}
+
+.sheet-header2 div div:first-child
+{
+  margin-top: 80px;
   height: 30px;
-}
-
-.sheet-header2 div:last-child
-{
-  background: url("image/combat.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
 
-
+  input
+  {
+  text-align: center;
+  width: 26px;
+  height: auto;
+  font-size: 14px;
+  }
 }
+
+
+.sheet-header2 div div:last-child
+{
+  margin-top: 40px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 60px;
+
+  input
+  {
+  text-align: center;
+  font-size: 30px;
+  }
+}
+
+.sheet-header2 div:last-child div:first-child
+{
+  margin-top: 35px;
+  height: 53px;
+  text-align: center;
+  margin-left: 170px;
+  margin-right: 45px;
+
+  input
+  {
+  text-align: center;
+  width: 45px;
+  height: auto;
+  font-size: 30px;
+  }
+}
+
+.sheet-header2 div:last-child div:nth-child(2)
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+  margin-left: 60px;
+  height: 33px;
+  width: 55px;
+  text-align: center;
+  padding: 15px;
+
+  input
+  {
+  font-size: 12px;
+  }
+}
+
+.sheet-header2 div:last-child div:last-child
+{
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3px;
+  margin-left: 220px;
+  height: 33px;
+  width: 175px;
+
+  input[type="radio"]
+  {
+  font-size: 12px;
+  display:inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right:12px;
+
+  }
+}
+
+
 
 
 /*
@@ -164,3 +290,41 @@ column-gap: 5px;
 .sheet-pc-text{
   padding-left: 50px;
 }
+
+
+
+/*
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ LAST SECTION
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+*/
+
+.sheet-lastblock 
+{
+  padding: 10px 20px;
+  padding-top: 20px;
+  min-height: 430px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  overflow: auto;
+  column-gap: 20px;
+  background: url("image/lastblock.png");
+  background-repeat: no-repeat;
+  background-size: 100.5% 101%;
+  }
+
+  .sheet-lastblock textarea
+  {
+    background-color: transparent;
+    width: 250px;
+    line-height: 2.0;
+    border: none;
+  }
+  .sheet-lastblock textarea:last-child
+  {
+    margin-left: 50px;
+    width: 330px;
+    border: none;
+  }

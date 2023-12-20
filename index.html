@@ -2,58 +2,76 @@
 <html lang="en">
 
 <head>
-
     <title>roll20</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body class="charsheet">
-
-
+    
     <div class="sheet-grid-container">
-        <div class="sheet-section-pc-header-name" style="border:2px solid black">
-            <input type="text" name="attr_character_name" title="@{character_name}">
-        </div>
-        <div class="sheet-section-pc-header-details-panel" style="border:2px solid black">
-            <div>
-                <label>Class &amp; Level</label>
-                <input type="text" name="attr_class_display" title="@{class_display}">
+        <div>
+            <input type="text">
+        </div> 
+
+        <div>
+
+            <div> 
+                <input type="text">  
+                <input type="text"> 
+                <input type="text">  
+                <input type="text"> 
             </div>
-            <div>
-                <label>Background</label>
-                <input type="text" name="attr_background" title="@{background}">
+
+            <div> 
+
             </div>
-            <div>
-                <label>Race</label>
-                <input type="text" name="attr_race_display" title="@{race_display}">
+
+            <div>  <input type="text"> 
             </div>
-            <div>
-                <label>Alignment</label>
-                <input type="text" name="attr_alignment" title="@{alignment}">
-            </div>
-        </div>
+            
+        </div> 
     </div>
+
+
 
     <!-- Header 2 -->
     <div class="sheet-header2">
         <div>
-            <div> <div>
-                <input type="number">
+            <div>
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
             </div>
-            <div><h6>ARCANA</h6>
-                <p>INT</p>
-            </div></div>
-            <div> <input type="number"></div>
-            <div> <input type="number"></div>
-            <div> <input type="number"></div>
-            <div> <input type="number"></div>
+            <div>
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
         </div>
+
         <div>
-               
+            <div>
+                <input type="text">
+                <input type="text">
+                <div>&nbsp;&nbsp; &nbsp;  </div>
+                <input type="text">
+                <input type="text">
+            </div>
+            
+            <div>
+                <input type="text">
+            </div>
+
+            <div>
+                <input type="radio" name="exh"><input type="radio" name="exh"><input type="radio" name="exh"><input type="radio" name="exh"><input type="radio" name="exh">
+            </div>
+          
         </div>
+
     </div>
     
 
@@ -153,7 +171,13 @@
     </div>
     <!-- SKILLS-end -->
 
+    <!-- last block -->
 
+    <div class="sheet-lastblock">
+        <textarea></textarea>
+        <textarea></textarea>
+        <textarea></textarea>
+    </div>
     <div class="sheet-text-container">
         <div class="sheet-text-pc">
             <p class="text"><b>Action Points (AP).</b> In combat,
@@ -191,9 +215,7 @@
                     the way
                     and become the new target of the attack. Cou enter their square and move them to an adjacent
                     square of your choice.</li>
-
             </ul>
-
         </div>
     </div>
 
